@@ -6,7 +6,7 @@
         
         stage('Checking out codigo base'){
             steps{
-                checkout scm: [$class: 'GitSCM',userRemoteConfigs:[[credentialsId: 'mi-llave-ssh-github', url: 'git@github.com:jvinc86/maven-project-hello-world.git']]]
+                checkout scm: [$class: 'GitSCM',userRemoteConfigs:[[credentialsId: 'mi-llave-ssh-github', url: 'https://github.com/jvinc86/jenkins-app-c-multithreading-example-1']]]
             }
         }
 
